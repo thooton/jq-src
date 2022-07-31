@@ -1,0 +1,11 @@
+prefix=/out
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libjq
+URL: https://stedolan.github.io/jq/
+Description: Library to process JSON using a query language
+Version: 1.6-98-gb6be13d-dirty
+Libs: -L${libdir} -ljq
+Cflags: -I${includedir}
